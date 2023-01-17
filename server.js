@@ -2,6 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
 const colors = require('colors');
+const cors = require('cors');
 const auth = require('./middleware/authenticator');
 //Load env vars
 dotenv.config({ path: './config/config.env' });
@@ -14,6 +15,7 @@ const users = require('./routes/users');
 const events = require('./routes/events');
 
 const app = express();
+app.use(cors());
 
 //authenticator middleware
 app.use(auth);
