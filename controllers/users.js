@@ -88,7 +88,10 @@ exports.loginUser = (req, res, next) => {
   const email = 'admin@admin.com';
   const password = 'admin';
   if (req.body.email === email && req.body.password === password) {
-    return res.status(200).json({ message: 'Admin User' });
+    req.h;
+    return res
+      .status(200)
+      .json({ name: 'admin', email: email, password: password });
   }
   return res.status(400).json({ message: 'Wrong email/password' });
 };
