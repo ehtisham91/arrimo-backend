@@ -9,6 +9,14 @@ var userData = [
     email: 'abbas@gmail.com',
     createdAt: '',
   },
+  {
+    _id: '5d7a514b5d2c12c7449be043',
+    name: 'Muhammad Bilal',
+    address: 'Johar Town Lahore',
+    phone: '090071231',
+    email: 'bilal@gmail.com',
+    createdAt: '',
+  },
 ];
 // @desc Get all users
 // @route GET /users
