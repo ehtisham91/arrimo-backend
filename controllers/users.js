@@ -1,4 +1,5 @@
 const User = require('../models/User');
+const uuid = require('uuid');
 
 var userData = [
   {
@@ -45,8 +46,10 @@ exports.getUser = (req, res, next) => {
 // @route POST /users/
 // @access private
 exports.createUser = (req, res, next) => {
+  let userNew = req.body;
+  userNew._id = uuid.v4();
   if (userData) {
-    userData.push(req.body);
+    userData.push(userNew);
     res.status(200).json({ success: true, msg: userData });
   } else {
     res.status(400).json({ success: false });
