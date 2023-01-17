@@ -21,7 +21,7 @@ var userData = [
 ];
 // @desc Get all users
 // @route GET /users
-// @access private
+// @access public
 exports.getUsers = (req, res, next) => {
   if (userData) {
     res.status(200).json({ success: true, msg: userData });

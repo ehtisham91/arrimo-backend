@@ -35,7 +35,7 @@ exports.getEvents = (req, res, next) => {
 
 // @desc Get one event
 // @route GET /event/:id
-// @access private
+// @access public
 exports.getEvent = (req, res, next) => {
   const event = eventData.find((event) => event._id === req.params.id);
   if (event) {
