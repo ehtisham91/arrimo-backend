@@ -7,9 +7,6 @@ const auth = require('./middleware/authenticator');
 //Load env vars
 dotenv.config({ path: './config/config.env' });
 
-// Connecting database
-// connectDB();
-
 // routes
 const users = require('./routes/users');
 const events = require('./routes/events');
@@ -41,7 +38,6 @@ const server = app.listen(
 );
 
 // Handle unhandeled promise rejections
-
 process.on('unhandledRejection', (err, promise) => {
   console.log(`Error: ${err.message}`.red.bold);
   // close server & exit process

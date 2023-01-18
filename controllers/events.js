@@ -1,27 +1,8 @@
 const Event = require('../models/Event');
 const uuid = require('uuid');
-//const eventData = require('../_data/event.json');
 
-var eventData = [
-  // {
-  //   _id: '9c2a514b5d2c12c7400xz123',
-  //   title: 'Wedding',
-  //   description: 'Friend Wedding ',
-  //   address: 'Canal View Lahore',
-  //   time: 'January 17,2023 - Wednesday 04:00 pm',
-  //   createdAt: '',
-  //   date: 'January 17,2023',
-  // },
-  // {
-  //   _id: '9c2a514b5d2c12c7400xz125',
-  //   title: 'Nikah',
-  //   description: 'Brother ',
-  //   address: 'Islamabad',
-  //   time: 'December 20,2002 - Wednesday 04:00 pm',
-  //   createdAt: '',
-  //   date: 'December 20,2002',
-  // },
-];
+var eventData = [];
+
 // @desc Get all events
 // @route GET /events
 // @access Public
